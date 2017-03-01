@@ -3,7 +3,9 @@
 Google Play Store
 =============
 
-<img style="align:center" src="https://lh3.googleusercontent.com/AjdEEORXoR0-bInNdRkw3sZfWkotxe3Hg-w8_r97E8SURctluQAJGHLPZ4ZDyh_bk3k=h900-rw" width="300" />
+<p align="center">
+  <img src="https://lh3.googleusercontent.com/AjdEEORXoR0-bInNdRkw3sZfWkotxe3Hg-w8_r97E8SURctluQAJGHLPZ4ZDyh_bk3k=h900-rw" width="500" />
+</p>
 
 Cette application se destine à deux types d’utilisateurs :
 Des voyageurs souhaitant voyager de A vers B.
