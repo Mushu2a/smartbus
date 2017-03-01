@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.m1.lesbuteurs.smartbus.fragment.MessagesFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelTitre"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:textSize="45dp"
+                android:text="MESSAGES"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_below="@id/labelTitre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="Si vous ne respectez pas les règles décrites ci-dessous, vous encourez le risque d'être banni du chat voire d'obtenir la suppression définitive de votre compte d'accès à l'application."
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/labelInfo"
+                android:layout_below="@id/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:text="1. Avant de poster"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_below="@id/labelInfo"
+                android:layout_centerInParent="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="› En toute occasion restez poli, courtois et respectueux, cela commence par savoir dire « bonjour » ou « bonsoir » et « merci ». \n\n › Le flood, les doubles-posts (deux messages consécutifs), la polémique et les propos déplacés sont interdits" />
+
+            <TextView
+                android:id="@+id/labelInfo1"
+                android:layout_below="@id/label1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="2. Groupe"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_below="@id/labelInfo1"
+                android:layout_centerInParent="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="› Tous les groupes sont publics et chaque utilisateur peut y accéder. \n\n › La création d'un nouveau groupe ne doit pas être inutile. Si tel est le cas, il sera supprimé" />
+
+            <Button
+                android:id="@+id/btn_open_channel_list"
+                android:layout_alignParentBottom="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ouvrir Channel" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

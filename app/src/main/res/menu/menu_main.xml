@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!-- <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/sendbird_icon_search"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/> -->
+
+    <item
+        android:id="@+id/action_phone"
+        android:title=""
+        android:icon="@drawable/ic_stat_name"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_location"
+        android:title=""
+        android:icon="@drawable/ic_menu_map"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_qrcode"
+        android:title=""
+        android:icon="@drawable/ic_qrcode"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

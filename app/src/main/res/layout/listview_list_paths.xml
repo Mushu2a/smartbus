@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Type"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/toPath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Départ"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/fromPath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrivé"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/middlePath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:text="Millieu"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Prix"
+        android:paddingTop="20dip"
+        android:textColor="@color/btn_logout_bg"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="22/30"
+        android:paddingTop="15dip"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Date"
+        android:textColor="@color/input_login_hint" />
+
+</RelativeLayout>

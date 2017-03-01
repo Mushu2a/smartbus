@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.m1.lesbuteurs.smartbus.breakout.Splash">
+
+    <TextView
+        android:id="@+id/hiScoreView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Mon meilleure score ="
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/topPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="top"
+        android:layout_marginTop="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Top players"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="newGame"
+            android:text="@string/launch" />
+
+        <Button
+            android:id="@+id/contGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="contGame"
+            android:text="@string/cont" />
+
+        <Button
+            android:id="@+id/ScoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="scoreGame"
+            android:text="@string/scores" />
+
+        <ToggleButton
+            android:id="@+id/soundToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="soundToggle"
+            android:text="@string/sound"
+            android:textOff="Son OFF"
+            android:textOn="Son ON" />
+
+    </LinearLayout>
+
+</LinearLayout>

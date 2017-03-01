@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Smartbus</string>
+
+    <string name="hint_lastname">Nom</string>
+    <string name="hint_firstname">Prénom</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_emailUsername">Email/Username</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_name">Pseudo</string>
+    <string name="btn_login">Se connecter</string>
+    <string name="btn_register">S\'enregistrer</string>
+    <string name="btn_link_to_register">Pas encore membre ? S\'enregistrer.</string>
+    <string name="btn_link_to_login">Déjà enregistré ? Se connecter.</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="btn_logout">Déconnexion</string>
+    <string name="name">Pseudo</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action_search">Recherche</string>
+    <string name="drawer_open">Ouvrir</string>
+    <string name="drawer_close">Fermer</string>
+
+    <string name="nav_item_profil">Profil</string>
+    <string name="nav_item_paths">Trajets</string>
+    <string name="nav_item_messages">Messages</string>
+    <string name="nav_item_game">Jeu</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_profil</item>
+        <item>@string/nav_item_paths</item>
+        <item>@string/nav_item_messages</item>
+        <item>@string/nav_item_game</item>
+        <item>@string/btn_logout</item>
+    </string-array>
+
+    <string name="newPathChoice">Choix du type</string>
+    <string-array name="newPath">
+        <item>Aller-Retour</item>
+        <item>Aller</item>
+        <item>Retour</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_paths">Trajets</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_game">Jeu</string>
+
+    <!-- Score -->
+    <string name="title_activity_breakout">Breakout</string>
+    <string name="launch">Nouveau Jeu</string>
+    <string name="cont">Continuer le jeu</string>
+    <string name="sound">Son</string>
+    <string name="scores">Les scores</string>
+    <string name="score"></string>
+
+    <string name="google_maps_api_key">AIzaSyBsX2YierDdvKY25cgYeUQdIGRusL-zx3U</string>
+</resources>

@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.m1.lesbuteurs.smartbus.fragment.PathsFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/sendeBirdBackground"
+                        android:paddingTop="50dp"
+                        android:paddingLeft="100dp"
+                        android:paddingRight="100dp" >
+
+                        <TextView
+                            android:id="@+id/textTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/editTo"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="DE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/editTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:maxLines="1"
+                            android:inputType="textCapWords"
+                            android:hint="Ville de départ" />
+
+                        <TextView
+                            android:id="@+id/textFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editTo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/editFrom"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="VERS"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/editFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editTo"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:maxLines="1"
+                            android:inputType="textCapWords"
+                            android:hint="Ville d'arrivée" />
+
+                        <TextView
+                            android:id="@+id/textGo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editFrom"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/editGo"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="ALLER"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/editGo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editFrom"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:focusableInTouchMode="false" />
+
+                        <TextView
+                            android:id="@+id/textReturn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editGo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/editReturn"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="RETOUR"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/editReturn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editGo"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:focusableInTouchMode="false" />
+
+                        <Button
+                            android:id="@+id/searchPath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/editReturn"
+                            android:layout_alignParentRight="true"
+                            android:text="Recherche" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/sendeBirdBackground"
+                        android:paddingTop="50dp"
+                        android:paddingLeft="100dp"
+                        android:paddingRight="100dp" >
+
+                        <Spinner
+                            android:id="@+id/newPathType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/newPath"
+                            android:prompt="@string/newPathChoice" />
+
+                        <TextView
+                            android:id="@+id/newPathTextToPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathType"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/newPathEditToPlace"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="DE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/newPathEditToPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/newPathTextToPlace"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:maxLines="1"
+                            android:inputType="textCapWords"
+                            android:hint="Ville de départ" />
+
+                        <TextView
+                            android:id="@+id/newPathTextFromPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathEditToPlace"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/newPathEditFromPlace"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="VERS"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/newPathEditFromPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathTextFromPlace"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:maxLines="1"
+                            android:inputType="textCapWords"
+                            android:hint="Ville d'arrivée" />
+
+                        <TextView
+                            android:id="@+id/newPathTextPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathEditFromPlace"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/newPathEditPrice"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="PRIX"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/newPathEditPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathTextPrice"
+                            android:layout_alignParentRight="true"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:hint="10"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/newPathTextDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathEditPrice"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/newPathEditDate"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="DATE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/newPathEditDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathTextDate"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:focusableInTouchMode="false" />
+
+                        <TextView
+                            android:id="@+id/newPathTextStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathEditDate"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/newPathEditStartTime"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="HEURE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/newPathEditStartTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathTextStartTime"
+                            android:layout_alignParentRight="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:focusableInTouchMode="false" />
+
+                        <Button
+                            android:id="@+id/newPath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/newPathEditStartTime"
+                            android:layout_alignParentRight="true"
+                            android:text="Créer" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/sendeBirdBackground"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+</RelativeLayout>
